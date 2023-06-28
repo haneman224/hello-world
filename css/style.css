@@ -77,3 +77,8 @@ div.songs li{
     border-bottom: 1px solid #ccc;
     padding: 5px 10px;
 }
+
+section{
+    padding: 20px;
+    background-color: #fff;
+}
