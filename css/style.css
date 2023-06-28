@@ -57,8 +57,23 @@ div.songs{
     clear: both;
 }
 
+div.songs h2{
+    font-size: 1em;
+    font-weight:  normal;
+    margin: 0;
+    background-color: #e6e4dd;
+    padding: 5px 10px;
+}
+
 div.songs ol {
+    padding:0;
+    margin: 0;
+    list-style-type: inslde;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
 
+div.songs li{
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
 }
