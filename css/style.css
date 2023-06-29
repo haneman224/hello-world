@@ -28,21 +28,18 @@ div.container{
     box-shadow: 0 0 10px rgba 0,0,0, .3;
 }
 div.description img{
-    float: left;
+    float: none;
     margin: 0 10px 10px 0;
 }
 h2{
     clear: right;
 }
 
-
-
 span.type{
     background-color: #e35a4d;
     padding: 2px 3px;
     color: #fff;
     font-size: .6em;
-    
 }
 
 .information{
@@ -92,7 +89,14 @@ section{
 footer{
     text-align: center;
     font-size: .8em;
-    padding; 5px
+    padding: 5px;
+}
 
+@media screen and (max-width: 600px){
+    .description img{
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }
 }
 
