@@ -99,8 +99,8 @@ footer{
     opacity: .5;
 }
 
-@media screen and (max-width: 600px){
-    div.description img{
+@media screen and (max-width: 600px) {
+    .description img{
         float: none;
         margin: 10px auto;
         display: block;
@@ -118,7 +118,7 @@ footer{
         font-size:  14px;
     }
 
-    .songs ol {
+    div.songs ol {
         display: block;
     }
 }
