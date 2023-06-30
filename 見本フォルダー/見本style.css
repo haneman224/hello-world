@@ -1,0 +1,123 @@
+@import url(sanitize.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+body {
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+header {
+    background-color: #422814;
+    padding: 10px;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+.description img {
+    float: left;
+    margin: 0 10px 10px 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+}
+
+.type {
+    background-color: #e35a4d;
+    padding: 2px 3px;
+    color: #fff;
+    font-size: .6em;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+}
+
+.information h1 {
+    font-size: 18px;
+    margin: 0 10px 0 0;
+}
+
+.songs {
+    clear: both;
+}
+
+a {
+    color: #666;
+}
+
+.songs h2 {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    background-color: #e6e4dd;
+    padding: 5px 10px;
+}
+
+.songs ol {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.songs li {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+}
+
+footer {
+    text-align: center;
+    font-size: .8em;
+    padding: 5px;
+}
+
+.description img:hover {
+    opacity: .5;
+}
+
+@media screen and (max-width: 600px) {
+    .description img {
+        float: none;
+        margin: 10px auto;
+        display: block;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 12px;
+    }
+    
+    .information h1 {
+        font-size: 14px;
+    }
+
+    .songs ol {
+        display: block;
+    }
+}
