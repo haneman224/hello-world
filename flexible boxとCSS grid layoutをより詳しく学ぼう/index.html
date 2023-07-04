@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!--そもそもフレックスボックスとは何ぞや-->
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>flexble box</title>
+    <!--ここから。内部参照のCSS--><!--divを省略-->
+    <style>
+        .box{ 
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+        }
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    </style>
+    <!--ここまで。内部参照のCSS-->
+</head>
+<body>
+    <div class="container"><!--全体を囲う=フレックスボックス/親要素と子要素-->
+        <div class="box" style="height: 200px;">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+</body>
+</html>
